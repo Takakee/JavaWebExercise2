@@ -189,7 +189,7 @@ $(document).ready(function() {
         if (userName_flag && chrName_flag && mail_flag && province_flag && city_flag && password_flag && confirmPassword_flag) {
             $.ajax({
                 type: "post",
-                url: "register.do",
+                url: "SignUpController",
                 data: $("#registerForm").serialize(), //将表单内容序列化成一个URL 编码字符串
                 dataType: "json",
                 success: function(response) {
